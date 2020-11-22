@@ -4,6 +4,7 @@ import pkg from './package.json'
 const def = {
   input: {
     index: 'src/index.tsx',
+    Modals: 'src/Modals.tsx',
   },
   external: [
     ...Object.keys(pkg.dependencies || {})

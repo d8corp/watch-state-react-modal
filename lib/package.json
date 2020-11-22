@@ -14,7 +14,8 @@
     "modal",
     "popup",
     "react",
-    "mobx",
+    "watch",
+    "state",
     "front-end"
   ],
   "author": "Mikhail Lysikov <d8corp@mail.ru>",
