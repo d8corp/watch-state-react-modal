@@ -1,6 +1,6 @@
 import React, {Component, ReactNode, createRef} from 'react'
 import style, {classes, StyleProps} from 'react-html-classes'
-import watch, {event, cache, state} from '@watch-state/react'
+import watch, {event, state, mixer} from '@watch-state/react'
 import Modals from './Modals'
 
 interface PopupProps {
@@ -83,11 +83,11 @@ class Modal extends Component {
   @state opening = false
   @state opened = false
 
-  @cache get open (): boolean {
+  @mixer get open (): boolean {
     const {open = true} = this.props
     return typeof open === 'function' ? open() : open
   }
-  @cache get show (): boolean {
+  @mixer get show (): boolean {
     if (!this.open && this.opened) {
       setTimeout(() => this.close('open'))
     }
