@@ -57,6 +57,7 @@ declare class Modal extends Component {
     onWillClose(button: string): void;
     onClose(button: string): void;
     onShow(): void;
+    onSetOverflow(overflow: string): void;
     get buttons(): JSX.Element;
     get children(): JSX.Element;
     get subButtons(): JSX.Element;

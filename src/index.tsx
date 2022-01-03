@@ -103,7 +103,7 @@ class Modal extends Component {
     if (this.open) {
       displayed--
       if (!displayed) {
-        document.body.style.overflow = ''
+        this.onSetOverflow('')
       }
     }
   }
@@ -135,7 +135,7 @@ class Modal extends Component {
       this.opened = false
       displayed--
       if (!displayed) {
-        document.body.style.overflow = ''
+        this.onSetOverflow('')
       }
     }
   }
@@ -151,9 +151,13 @@ class Modal extends Component {
       onShow()
     }
     if (!displayed) {
-      document.body.style.overflow = 'hidden'
+      this.onSetOverflow('hidden')
     }
     displayed++
+  }
+  onSetOverflow (overflow: string) {
+    document.body.style.overflow = overflow
+    document.documentElement.style.overflow = overflow
   }
   get buttons () {
     const {buttons, buttonsOverride} = this.props
