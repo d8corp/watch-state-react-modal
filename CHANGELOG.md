@@ -2,7 +2,7 @@
 
 ## v1.1
 
-### v1.1.2 [![08.08.2021](https://img.shields.io/date/1641206419)](https://github.com/d8corp/watch-state-react-modal/tree/v1.1.2)
+### v1.1.2 [![03.01.2022](https://img.shields.io/date/1641206419)](https://github.com/d8corp/watch-state-react-modal/tree/v1.1.2)
 - fixed a bug of page scrolling
 
 ### v1.1.1 [![08.08.2021](https://img.shields.io/date/1628370158)](https://github.com/d8corp/watch-state-react-modal/tree/v1.1.1)
